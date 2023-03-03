@@ -1,14 +1,18 @@
 <div th:fragment="header">
-<div class="d-flex flex-column flex-md-row align-items-center p-3 m-4 border-bottom">
-    <a href="/" class="d-flex align-items-center text-dark text-decoration">
-            <span class="fs-4">Blog</span>
-    </a>
+    <div class="px-4 py-5 my-5 text-center">
 
-    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="/blog">Блог</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="/about_us">О нас</a>
-        <a class="py-2 text-dark text-decoration-none" href="/contacts">Контакты</a>
-    </nav>
-</div>
+        <div class="logo-holder">
+            <img type="button" class="d-block mx-auto mb-4" src="https://kartinkin.net/uploads/posts/2022-12/1670113576_kartinkin-net-p-koshka-kartinka-bez-fona-krasivo-23.jpg" onclick="location.href='/';" alt="" width="72" height="57">
+        </div>
+        <h1 class="display-5 fw-bold">Кошатник</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">О кошках и как с ними жить</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4 gap-3" onclick="location.href='/';">Главная</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="location.href='/blog';">Новости</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="location.href='/blog/add';">Добавить статью</button>
+                <button type="button" class="btn btn-primary btn-lg px-4" onclick="location.href='/about';">О нас</button>
+            </div>
+        </div>
+    </div>
 </div>
